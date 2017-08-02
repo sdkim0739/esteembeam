@@ -46,6 +46,11 @@ body {
     width:100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+
 /* Portrait layout (default) */
 .app {
     position:absolute;             /* position in the center of the screen */

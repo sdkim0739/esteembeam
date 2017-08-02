@@ -9,6 +9,11 @@ body {
     background-color:rgb(73,239,222);
 }
 
+a {
+  text-decoration: none;
+}
+
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
