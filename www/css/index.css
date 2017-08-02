@@ -99,20 +99,17 @@ h1 {
     display:none;
 }
 
-.header {
-  
+#header {
+    margin-top: 10%;
+    margin-bottom: 15%;
 }
 
-.menu {
-
-}
 
 
 .button {
     background-color: rgb(212,253,255);
     border: none;
     color: black;
-    /*padding: 15px 32px;*/
     padding:16px 32px;
     text-align: center;
     text-decoration: none;
