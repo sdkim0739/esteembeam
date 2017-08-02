@@ -29,6 +29,25 @@ body {
 
 }
 
+
+.button {
+    font-family: "Catamaran";
+    background-color: RGB(212,253,255); /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
@@ -37,14 +56,17 @@ body {
         margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
                                       /* offset horizontal: half of image width and text area width */
     }
+
 }
 
 h1 {
+    font-family:"Raleway";
     font-size:24px;
     font-weight:normal;
     margin:0px;
     overflow:visible;
     padding:0px;
     text-align:center;
+
 }
 .button-wrap {margin-top: 15%;}
