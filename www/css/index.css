@@ -29,19 +29,46 @@
     }
 }
 
+body {
+  background-color: rgb(73, 239, 222);
+  /* background: linear-gradient(to right, #392033, #fd6051, #ff8967, #fec051, #ffe577); */
+  color: black;
+  text-align: center;
+}
+/* Text styling */
 h1 {
-    font-family: "Catamaran";
-    text-align: center;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 600;
 }
 
 h3 {
-    font-family: "Raleway";
-    font-weight:normal;
-    text-align:center;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
 }
 
-#date {
-  border: 2px solid blue;
-  margin-left: auto;
-  margin-right: auto;
+h4, span {
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  font-size: 24px;
+}
+
+/* form field styling */
+.textfld {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* button styling */
+.button {
+  display: inline-block;
+  background-color: rgb(212, 253, 255);
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  margin: 5px;
 }
