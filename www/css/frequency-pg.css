@@ -18,7 +18,7 @@
  */
 
 
-
+/* General styling */
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
@@ -35,26 +35,31 @@ body {
   color: black;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+}
+
 /* Text styling */
 h1 {
-    font-family: "Catamaran", sans-serif;
+    font-family: "Raleway";
     font-weight: 600;
 }
 
 h3 {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Catamaran", sans-serif;
     font-weight: normal;
     font-size: 24px;
 }
 
 h4, span {
-  font-family: "Helvetica Neue";
+  font-family: "Catamaran";
   font-weight: 300;
   font-size: 24px;
 }
 
 /* form field styling */
-.textfld {
+input {
   display: block;
   margin-left: auto !important;
   margin-right: auto !important;
