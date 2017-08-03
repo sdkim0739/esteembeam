@@ -11,6 +11,71 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" type="text/css" rel="stylesheet">
 
+    <style>
+      * {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-color:white;
+}
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;
+        margin:-90px 0px 0px -198px;
+    }
+}
+
+h1 {
+    font-family:"Raleway";
+    font-size:100%;
+    font-weight:normal;
+    margin-top:10%;
+    margin-bottom:15%;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+  }
+
+.button {
+    background-color:rgb(212,253,255);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-family:"Catamaran";
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#button1 {
+  width: 100%;
+}
+#button2 {
+  width: 100%;
+}
+#button3 {
+  width: 100%;
+}
+#button4 {
+  width: 100%;
+}
+#button5 {
+  width: 100%;
+}
+
+    </style>
+
     <title>Hello World</title>
 
 </head>
@@ -26,17 +91,39 @@
       <h1>Confidence Issues</h1>
     </div>
 
-      <button class="button" id="button1">I Feel Like I'm Not Good Enough</button>
-      <br>
-      <button class="button" id="button2">I Feel Like I'm Stupid</button>
-      <br>
-      <button class="button" id="button3">I Feel Unimportant</button>
-      <br>
-      <button class="button" id="button4">I'm Not Outgoing</button>
-      <br>
-      <button class="button" id="button5">I'm Not Confident in My Abilities</button>
 
+        </style>
 
-</body>
+        <title>Hello World</title>
 
-</html>
+    </head>
+
+    <body>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <div id="header">
+          <h1>Confidence Issues</h1>
+        </div>
+
+<!--
+          <button class="button" id="button1">I Feel Like I'm Not Good Enough</button>
+          <button class="button" id="button2">I Feel Like I'm Stupid</button>
+          <button class="button" id="button3">I Feel Unimportant</button>
+          <button class="button" id="button4">I'm Not Outgoing</button>
+          <button class="button" id="button5">I'm Not Confident in My Abilities</button>
+        -->
+          <button class="button" id="button1"><input type="checkbox" name="confidence" value="Stupid"> I Feel Like I'm Stupid<br></button>
+          <button class="button" id="button2"><input type="checkbox" name="confidence" value="Not_Good_Enough"> I Feel Like I'm Not Good Enough<br></button>
+          <button class="button" id="button3"><input type="checkbox" name="confidence" value="Unimportant"> I Feel Unimportant<br></button>
+          <button class="button" id="button4"><input type="checkbox" name="confidence" value="Not_Outgoing"> I'm Not Outgoing<br></button>
+          <button class="button" id="button5"><input type="checkbox" name="confidence" value="Abilities"> I'm Not Confident in My Abilities<br></button>
+
+          <input type="submit" value="Submit">
+
+    </body>
+
+    </html>
