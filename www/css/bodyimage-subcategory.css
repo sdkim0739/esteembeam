@@ -6,7 +6,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:rgb(73,239,222);
+    background-color:white;
 }
 
 /* Landscape layout (with min-width) */
@@ -30,7 +30,7 @@ h1 {
     text-align:center;
   }
 
-.button {
+.form-wrap {
     background-color:rgb(212,253,255); /* Green */
     border: none;
     color: black;
@@ -44,5 +44,4 @@ h1 {
     cursor: pointer;
     margin-left:auto;
     margin-right:auto;
-    width:100%
 }
