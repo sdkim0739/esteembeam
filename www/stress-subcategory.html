@@ -7,9 +7,10 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
 
-    <link rel="stylesheet" type="text/css" href="css/bodyimage-subcategory.css">
+    <link rel="stylesheet" type="text/css" href="css/stress-subcategory.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <title>Stress</title>
 
@@ -22,25 +23,21 @@
     <script type="text/javascript">
         app.initialize();
     </script>
-    <div id="header">
-      <h1>Stress</h1>
-    </div>
-<h1>Is stress harming the way you think about yourself? Please describe what you're feeling</h1>
-      <button class="button" id="button1">I have too much work and don't know if I can handle it</button>
-      <br>
-      <button class="button" id="button2">People are putting too much pressure on me</button>
-      <br>
-      <button class="button" id="button3">There's a lot of pressure on school/grades and it's too much for me</button>
-      <br>
-      <button class="button" id="button4">I have too many things going on</button>
-      <br>
-      <button class="button" id="button5">I'm going through some family problems</button>
-      <br>
-      <button class="button" id="button5">There's too many things going on at once</button>
-      <br>
-      <button class="button" id="button5">I'm having relationship issues</button>
-      <br>
-      <button class="button" id="button5">I'm having relationship issues</button>
+
+<h1>Is stress harming the way you think about yourself? Please describe what you're feeling.</h1>
+
+      <div class="button">
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="stress" value="work">I have too much work and don't know if I can handle it<br>
+  <input type="checkbox" name="stress" value="pressure"> People are putting too much pressure on me<br>
+  <input type="checkbox" name="stress" value="toomanythings">I have too many things going on<br>
+  <input type="checkbox" name="stress" value="familyproblems">I'm going through some family problems<br>
+  <input type="checkbox" name="stress" value="trauma">I've gone through a traumatic life event<br>
+  <input type="checkbox" name="stress" value="relationshipissues">I'm having relationship issues<br>
+  <input type="checkbox" name="stress" value="support">I don't have much support<br>
+  <input type="next" value="Next">
+</div>
+
 
 
 </body>
