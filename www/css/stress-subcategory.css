@@ -30,7 +30,7 @@ h1 {
     text-align:center;
   }
 
-.button {
+.form-wrap {
     background-color:rgb(212,253,255); /* Green */
     border: none;
     color: black;
@@ -44,5 +44,4 @@ h1 {
     cursor: pointer;
     margin-left:auto;
     margin-right:auto;
-    width:100%
 }
