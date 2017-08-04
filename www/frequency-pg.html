@@ -19,24 +19,55 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/frequency-pg.css" />
 
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script src="js/moment.min.js"></script>
     <script src="js/combodate.js"></script>
 
-    <title>Complete</title>
+    <title>Select frequency</title>
 </head>
 
 <body>
     <h1>EsteemBeam</h1>
-    <h3>You're done!</h3>
+    <h3>Select frequency</h3>
+
+    <h4>I would like a notification every</h4>
     <br />
-    <h4>You should receive notifications at your specified frequency and time.</h4>
+    <input type="text" id="time" data-format="HH:mm" data-template="HH : mm" name="datetime">
+    <script>
+    $(function(){
+        $('#time').combodate({
+            firstItem: 'name', //show 'hour' and 'minute' string at first item of dropdown
+            minuteStep: 1
+        });
+    });
+    </script>
     <br />
-    <h4>Hope we helped!</h4>
+    <h4>ending on</h4>
+    <input type="text" id="date" data-format="DD-MM-YYYY" data-template="D MMM YYYY" name="date" value="09-01-2013">
+    <script>
+    $(function(){
+        $('#date').combodate({
+          minYear: 2015,
+          maxYear: 2030
+        });
+    });
+    </script>
     <br />
-    <h4>To receive messages for another category, <a href="categories.html">click here</a>.</h4>
+
+    <a href="done.html">
+      <button class="button" style="vertical-align:middle"><span>Next </span></button>
+    </a>
+
+    <a href="" class="btn btn-default btn-sm">
+      <span class="glyphicon glyphicon-circle-arrow-left"></span> Back
+    </a>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
