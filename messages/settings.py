@@ -25,7 +25,7 @@ SECRET_KEY = 'w22@ffu&zhik@a63*c+#@gj#jpnfdp9vz*%g6$bq0v8-x=*(v!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['esteembeam-backend-leedhe.c9users.io', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['esteembeam-backend-leedhe.c9users.io', '127.0.0.1:8000', 'sdkim0739.pythonanywhere.com']
 
 
 # Application definition
