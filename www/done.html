@@ -22,8 +22,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
 
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/combodate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>Complete</title>
 </head>
@@ -37,6 +36,14 @@
     <h4>Hope we helped!</h4>
     <br />
     <h4>To receive messages for another category, <a href="categories.html">click here</a>.</h4>
+
+    <script>
+      $(document).ready(function(){
+        $.getJSON("https://esteembeam-backend-leedhe.c9users.io/api/message/?format=json", function(result){
+            alert(result.objects[0].text);
+        });
+      });
+    </script>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
