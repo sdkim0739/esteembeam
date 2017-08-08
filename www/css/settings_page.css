@@ -37,3 +37,14 @@ btn-bot {
   position: absolute;
   bottom: 0;
 }
+
+.fa {
+  position:relative;
+  color:#8c8c8c;
+}
+
+.fa-chevron-circle-left {
+  position:absolute;
+  bottom:20px;
+  left:20px;
+}
