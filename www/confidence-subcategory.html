@@ -11,32 +11,46 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" type="text/css" rel="stylesheet">
 
-    <title>Hello World</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <title>Confidence Subcategories</title>
 
 </head>
 
-<body>
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
-    <div id="header">
-      <h1>Confidence Issues</h1>
-    </div>
+    <body>
 
-      <button class="button" id="button1">I Feel Like I'm Not Good Enough</button>
-      <br>
-      <button class="button" id="button2">I Feel Like I'm Stupid</button>
-      <br>
-      <button class="button" id="button3">I Feel Unimportant</button>
-      <br>
-      <button class="button" id="button4">I'm Not Outgoing</button>
-      <br>
-      <button class="button" id="button5">I'm Not Confident in My Abilities</button>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <div id="header">
+          <h1>Confidence Issues</h1>
+        </div>
 
+<!--
+          <button class="button" id="button1">I Feel Like I'm Not Good Enough</button>
+          <button class="button" id="button2">I Feel Like I'm Stupid</button>
+          <button class="button" id="button3">I Feel Unimportant</button>
+          <button class="button" id="button4">I'm Not Outgoing</button>
+          <button class="button" id="button5">I'm Not Confident in My Abilities</button>
+        -->
+          <button class="button" id="button1"><input type="checkbox" name="confidence" value="Stupid"> I Feel Like I'm Stupid<br></button>
+          <button class="button" id="button2"><input type="checkbox" name="confidence" value="Not_Good_Enough"> I Feel Like I'm Not Good Enough<br></button>
+          <button class="button" id="button3"><input type="checkbox" name="confidence" value="Unimportant"> I Feel Unimportant<br></button>
+          <button class="button" id="button4"><input type="checkbox" name="confidence" value="Not_Outgoing"> I'm Not Outgoing Enough<br></button>
+          <button class="button" id="button5"><input type="checkbox" name="confidence" value="Abilities"> I'm Not Confident in My Abilities<br></button>
 
-</body>
+          <input type="✔️" value="Submit">
+          <a href="categories.html" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-circle-arrow-left"></span> Back
+          </a>
 
-</html>
+    </body>
+
+    </html>

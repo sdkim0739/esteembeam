@@ -1,8 +1,12 @@
 body {
-    background-color:rgb(73,239,222);
+    background-color:white;
     text-align:center;
     font-family: "Catamaran"
 }
+a {
+  text-decoration: none;
+}
+
 h2 {
   text-align:center;
   font-size: 35px;
@@ -14,15 +18,62 @@ h4 {
   font-family: "Raleway"
 }
 
-button {
-  background-color:rgb(212,253,255);
-  color:black;
-  text-align:center;
+.button {
+    background-color:rgb(212,253,255);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-family:"Catamaran";
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#button1 {
   width: 100%;
-  padding: 15px 32px;
-  text-decoration:none;
-  display: inline-block;
-  font-size: 16px;
-  margin: auto;
+}
+#button2 {
+  width: 100%;
+}
+#button3 {
+  width: 100%;
+}
+#button4 {
+  width: 100%;
+}
+#button5 {
+  width: 100%;
+}
+#button6 {
+  width: 100%;
+}
+#button7 {
+  width: 100%;
+}
+#button8 {
+  width: 100%;
+}
+#button9 {
+  width: 100%;
+}
+#button10 {
+  width:50%;
+  background-color:#66ffcc;
   border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display:block;
+  font-family:"Catamaran";
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  margin-left:auto;
+  margin-right:auto;
 }
