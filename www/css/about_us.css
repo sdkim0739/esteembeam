@@ -1,18 +1,12 @@
 * {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
 }
 
 body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    -webkit-touch-callout: none;                
+    -webkit-text-size-adjust: none;            
+    -webkit-user-select: none;                 
     background-color:white;
-
-
-}
-
-a {
-  text-decoration: none;
 }
 
 
@@ -36,25 +30,31 @@ a {
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position:left center;
-        padding:75px 0px 75px 170px;
-        margin:-90px 0px 0px -198px;                                  
+        padding:75px 0px 75px 170px;  
+        margin:-90px 0px 0px -198px;                               
     }
 
 }
 
 h1 {
     font-family:"Raleway";
-    font-size:24px;
+    font-size:36px;
     font-weight:normal;
     margin-top:50px;
+    margin-bottom:15%;
     overflow:visible;
     padding:0px;
     text-align:center;
+    color:#85e0e0;
+  }
 
-}
-
-.button-wrap {
-    margin-top: 15%;
+p {
+    color:black;
+    text-align: center;
+    font-family:"Catamaran";
+    font-size: 18px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .fa {
@@ -67,3 +67,4 @@ h1 {
   top:5px;
   left:8px;
 }
+   
