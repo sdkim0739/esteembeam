@@ -41,5 +41,6 @@ h4 {
 
 .centerimg {
   margin: auto;
-  width: 60%;
+  width: 200px;
+  height: 150px;
 }
