@@ -47,3 +47,43 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+function schedule()
+{
+	$('.button').click(function(){
+    	var subcatValue = [];
+            $.each($("input[type='checkbox']:checked"), function(){
+                subcatValue.push($(this).val());
+            });
+
+        var subcatFilter = [];
+
+        $.getJSON("https://sdkim0739.pythonanywhere.com/api/message/?format=json", function(result){
+			subcatValue.forEach(function(subcat) {
+            	subcatFilter.push(result.objects.filter(function(msg) {
+                   return msg.subcategory == subcat;
+                }));
+            });
+            var message = subcatFilter[Math.floor(Math.random() * subcatFilter.length)][Math.floor(Math.random() * subcatFilter.length)].text;
+        });
+	});
+
+  var user_freq = document.getElementById("frequency").options[ document.getElementById("frequency")].value;
+  var date = new Date();
+
+  cordova.plugins.notification.local.schedule({
+      id: 1,
+      title: "EsteemBeam",
+      message: "${message}",
+      firstAt: date, // firstAt and at properties must be an IETF-compliant RFC 2822 timestamp
+      every: "${user_freq}", // this also could be minutes i.e. 25 (int)
+      sound: "file://sounds/reminder.mp3",
+      icon: "http://icons.com/?cal_id=1",
+      data: { meetingId:"123#fg8" }
+  });
+
+  cordova.plugins.notification.local.on("click", function (notification) {
+      joinMeeting(notification.data.meetingId);
+  });
+
+}
