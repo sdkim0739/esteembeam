@@ -1,27 +1,48 @@
-body {
-    background-color:white;
-    text-align:center;
-    font-family: "Catamaran"
-}
-a {
-  text-decoration: none;
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-h2 {
-  text-align:center;
-  font-size: 35px;
-  font-family: "Raleway"
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-color:white;
 }
-h4 {
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;
+        margin:-90px 0px 0px -198px;
+    }
+}
+
+h1 {
+    font-family:"Raleway";
+    font-size:36px;
+    font-weight:normal;
+    margin-top:10%;
+    margin-bottom:15%;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+  }
+
+h2 {
+  font-family:"Raleway";
+  font-size:24px;
+  font-weight:normal;
+  margin-top:10%;
+  margin-bottom:15%;
+  overflow:visible;
+  padding:0px;
   text-align:center;
-  font-size: 22px;
-  font-family: "Raleway"
 }
 
 .button {
     background-color:rgb(212,253,255);
     border: none;
-    color: black;
+    color:black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -60,20 +81,20 @@ h4 {
 }
 #button9 {
   width: 100%;
+
+.fa {
+    position:relative;
+    color:#8c8c8c;
 }
-#button10 {
-  width:50%;
-  background-color:#66ffcc;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display:block;
-  font-family:"Catamaran";
-  font-size: 16px;
-  margin: 2px 2px;
-  cursor: pointer;
-  margin-left:auto;
-  margin-right:auto;
+
+.fa-chevron-circle-right {
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+
+.fa-chevron-circle-left {
+    position:absolute;
+    bottom:5px;
+    left:5px;
 }
