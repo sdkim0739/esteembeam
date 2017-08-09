@@ -9,13 +9,6 @@ body {
     background-color:white;
 }
 
-
-a {
-  text-decoration: none;
-}
-
-
-/* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
         background-position:left center;
@@ -23,7 +16,6 @@ a {
         margin:-90px 0px 0px -198px;
     }
 }
-
 
 h1 {
     font-family:"Raleway";
@@ -35,7 +27,7 @@ h1 {
     padding:0px;
     text-align:center;
   }
-
+  
 h2 {
   font-family:"Raleway";
   font-size:24px;
@@ -50,7 +42,7 @@ h2 {
 .button {
     background-color:rgb(212,253,255);
     border: none;
-    color:black;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -73,9 +65,6 @@ h2 {
   width: 100%;
 }
 #button4 {
-  width: 100%;
-}
-#button5 {
   width: 100%;
 }
 
