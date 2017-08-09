@@ -27,7 +27,7 @@ h1 {
     padding:0px;
     text-align:center;
   }
-
+  
 h2 {
   font-family:"Raleway";
   font-size:24px;
@@ -42,7 +42,7 @@ h2 {
 .button {
     background-color:rgb(212,253,255);
     border: none;
-    color:black;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -67,20 +67,6 @@ h2 {
 #button4 {
   width: 100%;
 }
-#button5 {
-  width: 100%;
-}
-#button6 {
-  width: 100%;
-}
-#button7 {
-  width: 100%;
-}
-#button8 {
-  width: 100%;
-}
-#button9 {
-  width: 100%;
 
 .fa {
     position:relative;
