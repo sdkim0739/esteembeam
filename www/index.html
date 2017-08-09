@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="cordova.js"></script>
+
 
     <title>Home</title>
 
@@ -50,6 +52,20 @@
     <script type="text/javascript">
         app.initialize();
     </script>
+
+    <script>
+        var info = null;
+        document.addEventListener("deviceready", function(){
+            if(!localStorage.getItem("rp_data"))
+            {
+            var rp_data = {data: []};
+            localStorage.setItem("rp_data", JSON.stringify(rp_data));
+            }
+            info = JSON.parse(localStorage.getItem("rp_data"));
+          },
+        false);
+    </script>
+
 </body>
 
 </html>
