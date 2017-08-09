@@ -25,35 +25,11 @@
     <script src="js/moment.min.js"></script>
     <script src="js/combodate.js"></script>
 
-    <title>Select frequency</title>
+    <title>You're done :)</title>
 </head>
 
 <body>
     <h1>EsteemBeam</h1>
-    <h3>Select frequency</h3>
-
-    <h4>I would like a notification every</h4>
-    <br />
-    <input type="text" id="time" data-format="HH mm" data-template="HH mm" name="datetime">
-    <script>
-    $(function(){
-        $('#time').combodate({
-            firstItem: 'name', //show 'hour' and 'minute' string at first item of dropdown
-            minuteStep: 1
-        });
-    });
-    </script>
-    <br />
-    <h4>ending on</h4>
-    <input type="text" id="date" data-format="DD-MM-YYYY" data-template="D MMM YYYY" name="date" value="mm-dd-yyyy">
-    <script>
-    $(function(){
-        $('#date').combodate({
-          minYear: 2015,
-          maxYear: 2030
-        });
-    });
-    </script>
     <br />
 
     <h1>You're done!</h1>
