@@ -2,34 +2,52 @@
 
 <html lang="en-US">
 
-    <head>
-      <meta charset="utf-8" />
-      <meta name="format-detection" content="telephone=no" />
-      <meta name="msapplication-tap-highlight" content="no" />
-      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 
-      <link rel="stylesheet" type="text/css" href="css/settings_page.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
+    <link rel="stylesheet" type="text/css" href="css/social_wellness_subcategories.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
 
-      <script src="https://use.fontawesome.com/37223d7631.js"></script>
-
-      <title>Settings Page</title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="https://use.fontawesome.com/37223d7631.js"></script>
+    
+    <title>EsteemBeam Social Wellness Subcategories</title>
+   
     </head>
 
-<body>
+    <body>
 
-    <h1>Settings</h1>
+        <h1>Social Issues</h1>
+        <h2Please tell us how you feel</h2>
 
-    <br><h2>You can edit your EsteemBeam notifications here!</h2></br>
+        <button class="button" id="button1"><input type="checkbox" name="social_wellness" value="Pressure"> My friends are pressuring me into something I don't want<br></button>
+        <button class="button" id="button2"><input type="checkbox" name="social_wellness" value="Jealous"> I'm jealous of my friends<br></button>
+        <button class="button" id="button3"><input type="checkbox" name="social_wellness" value="Few_Friends"> I don't have many friends<br></button>
+        <button class="button" id="button4"><input type="checkbox" name="social_wellness" value="Wonder"> I wonder if my friends actually like me<br></button>
+        <button class="button" id="button5"><input type="checkbox" name="social_wellness" value="Situations"> I don't know how to act in social situations<br></button>
+        <button class="button" id="button6"><input type="checkbox" name="social_wellness" value="Judge"> People judge me<br></button>
+        <button class="button" id="button7"><input type="checkbox" name="social_wellness" value="Mean"> People are mean to me<br></button>
+        <button class="button" id="button8"><input type="checkbox" name="social_wellness" value="Left_Out"> I feel left out<br></button>
+        <button class="button" id="button9"><input type="checkbox" name="social_wellness" value="Rumors"> People are spreading rumors about me<br></button>
 
-    <div class="Center" align="center">
-      <button class="btn-bot">Stop Sending Me Notifications</button>
-    </div>
-  
-    <a href="index.html"><i class="fa fa-chevron-circle-left fa-5x" aria-hidden="true"></i></a>
-    
-</body>
 
+        <a href="categories.html"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
+        <a href="frequency-pg.html"><i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i></a>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+          app.initialize();
+      </script>
+
+
+    </body>
 </html>
