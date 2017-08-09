@@ -1,3 +1,7 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 body {
     background-color:white;
     text-align:center;
@@ -21,7 +25,7 @@ h4 {
 .button {
     background-color:rgb(212,253,255);
     border: none;
-    color: black;
+    color:black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -31,8 +35,8 @@ h4 {
     margin: 2px 2px;
     cursor: pointer;
     margin-left:auto;
-    margin-right:auto;
-}
+     margin-right:auto;
+ }
 
 #button1 {
   width: 100%;
@@ -61,19 +65,20 @@ h4 {
 #button9 {
   width: 100%;
 }
-#button10 {
-  width:50%;
-  background-color:#66ffcc;
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display:block;
-  font-family:"Catamaran";
-  font-size: 16px;
-  margin: 2px 2px;
-  cursor: pointer;
-  margin-left:auto;
-  margin-right:auto;
+
+.fa {
+    position:relative;
+    color:#8c8c8c;
+}
+
+.fa-chevron-circle-right {
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+
+.fa-chevron-circle-left {
+    position:absolute;
+    bottom:5px;
+    left:5px;
 }

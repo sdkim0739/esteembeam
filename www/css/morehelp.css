@@ -40,7 +40,7 @@ h1 {
     font-family:"Raleway";
     font-size:36px;
     font-weight:normal;
-    margin-top:10%;
+    margin-top:50px;
     margin-bottom:15%;
     overflow:visible;
     padding:0px;
@@ -72,7 +72,7 @@ p {
     text-align:center;
 }
     
-a {
+.linklist a {
     color:#85e0e0;
     font-family:"Catamaran";
     font-size:21px;
@@ -81,4 +81,15 @@ a {
 
 .button-wrap {
    margin-top: 15%;
+}
+
+.fa {
+  position:relative;
+  color:#8c8c8c;
+}
+
+.fa-chevron-circle-left {
+  position:absolute;
+  top:5px;
+  left:8px;
 }
