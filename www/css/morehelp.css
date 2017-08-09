@@ -40,6 +40,61 @@ h1 {
     font-family:"Raleway";
     font-size:36px;
     font-weight:normal;
+    margin-top:50px;
+    margin-bottom:15%;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+  }
+
+h2 {
+  font-family:"Raleway";
+  font-size:22px;
+  font-weight:normal;
+  margin-top:10%;
+  margin-bottom:15%;
+  overflow:visible;
+  padding:0px;
+  text-align:center;
+  color:#737373;
+}
+
+p {
+    color:black;
+    text-align: center;
+    font-family:"Catamaran";
+    font-size: 18px;
+    margin-left:auto;
+    margin-right:auto;
+} 
+
+.linklist {
+    text-align:center;
+}
+    
+.linklist a {
+    color:#85e0e0;
+    font-family:"Catamaran";
+    font-size:21px;
+    text-decoration:none;
+}
+
+.button-wrap {
+   margin-top: 15%;
+}
+
+.fa {
+  position:relative;
+  color:#8c8c8c;
+}
+
+.fa-chevron-circle-left {
+  position:absolute;
+  top:5px;
+  left:8px;
+}
+    font-size:36px;
+    font-weight:normal;
     margin-top:10%;
     margin-bottom:15%;
     overflow:visible;
