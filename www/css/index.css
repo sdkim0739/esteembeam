@@ -1,0 +1,39 @@
+
+ h1 {
+  color: black;
+  font-family: "Raleway";
+  text-align: center;
+  font-size: 36px;
+}
+
+h4 {
+  color: black;
+  font-family: "Raleway";
+  text-align: center;
+  font-size: 22px;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgb(212, 253, 255);
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 200px;
+}
+
+#menu {
+  width:200px;
+  height:200px;
+  margin:auto;
+  padding:0%;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border-radius:5%;
+}
+
+.btn-bot {
+  position: absolute;
+  bottom: 0;
+}
