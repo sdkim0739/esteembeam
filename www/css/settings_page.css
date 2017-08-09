@@ -1,19 +1,18 @@
-
- h1 {
+h1 {
   color: black;
   font-family: "Raleway";
   text-align: center;
   font-size: 36px;
 }
 
-h4 {
+h2 {
   color: black;
   font-family: "Raleway";
   text-align: center;
   font-size: 22px;
 }
 
-.button {
+button {
   display: inline-block;
   background-color: rgb(212, 253, 255);
   border: none;
@@ -23,9 +22,10 @@ h4 {
   width: 200px;
 }
 
-#menu {
+Center {
   width:200px;
   height:200px;
+  background:#0088cc;
   margin:auto;
   padding:0%;
   position: relative;
@@ -33,7 +33,18 @@ h4 {
   border-radius:5%;
 }
 
-.btn-bot {
+btn-bot {
   position: absolute;
   bottom: 0;
+}
+
+.fa {
+  position:relative;
+  color:#8c8c8c;
+}
+
+.fa-chevron-circle-left {
+  position:absolute;
+  bottom:20px;
+  left:20px;
 }
