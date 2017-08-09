@@ -38,3 +38,8 @@ h4 {
   position: absolute;
   bottom: 0;
 }
+
+.centerimg {
+  margin: auto;
+  width: 60%;
+}
