@@ -6,3 +6,4 @@ class MessageResource(ModelResource):
     class Meta:
         queryset = Message.objects.all()
         resource_name = 'message'
+        limit = 0

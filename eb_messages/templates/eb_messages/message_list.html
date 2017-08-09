@@ -1,1 +1,16 @@
 <h1>Hey</h1>
+
+<!--<script>
+$(function() {
+	$('button').click(function(){
+	var checkedValue = $('input[type="checkbox"]:checked').val();
+
+    $.getJSON("https://sdkim0739.pythonanywhere.com/api/message/?format=json", function(result){
+        var subcatFilter = result.objects.filter(function(msg) {
+            return msg.subcategory == checkedValue;
+        });
+    	console.log(subcatFilter[Math.floor(Math.random() * subcatFilter.length)].text);
+	});
+});
+});
+</script> -->
