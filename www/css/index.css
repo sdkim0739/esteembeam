@@ -13,6 +13,12 @@ h4 {
   font-size: 22px;
 }
 
+.header {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
 .button {
   display: inline-block;
   background-color: rgb(212, 253, 255);
@@ -40,7 +46,7 @@ h4 {
 }
 
 .centerimg {
-    display: block;
-    margin: auto;
-    width: 50%;
+    max-width: 100%;
+    vertical-align: middle;
+}
 }
