@@ -47,26 +47,28 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+var message;
+
+function storeMessage() {
+  var subcatValue = [];
+        $.each($("input[type='checkbox']:checked"), function(){
+            subcatValue.push($(this).val());
+        });
+
+    var subcatFilter = [];
+
+    $.getJSON("https://sdkim0739.pythonanywhere.com/api/message/?format=json", function(result) {
+  subcatValue.forEach(function(subcat) {
+          subcatFilter.push(result.objects.filter(function(msg) {
+               return msg.subcategory == subcat;
+            }));
+        });
+        message = subcatFilter[Math.floor(Math.random() * subcatFilter.length)][Math.floor(Math.random() * subcatFilter.length)].text;
+    });
+}
 
 function schedule()
 {
-	$('.button').click(function(){
-    	var subcatValue = [];
-            $.each($("input[type='checkbox']:checked"), function(){
-                subcatValue.push($(this).val());
-            });
-
-        var subcatFilter = [];
-
-        $.getJSON("https://sdkim0739.pythonanywhere.com/api/message/?format=json", function(result){
-			subcatValue.forEach(function(subcat) {
-            	subcatFilter.push(result.objects.filter(function(msg) {
-                   return msg.subcategory == subcat;
-                }));
-            });
-            var message = subcatFilter[Math.floor(Math.random() * subcatFilter.length)][Math.floor(Math.random() * subcatFilter.length)].text;
-        });
-	});
 
   var user_freq = document.getElementById("frequency").options[document.getElementById("frequency")].value;
   var now = new Date();
