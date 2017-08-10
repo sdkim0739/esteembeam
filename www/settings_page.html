@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran">
 
     <script src="https://use.fontawesome.com/37223d7631.js"></script>
+    <script type="text/javascript" src="local-notification.js"></script>
 
     <title>EsteemBeam Social Wellness Subcategories</title>
 
@@ -29,7 +30,7 @@
         </div>
 
         <script>
-              function cancelNotif() {
+              var cancelNotif = function() {
                   cordova.plugins.notification.local.cancel("cancelall", function () {
                   // Notification was cancelled
                   }, scope);

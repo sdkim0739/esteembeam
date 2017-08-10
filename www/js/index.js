@@ -47,47 +47,54 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
 var message;
 
-function storeMessage() {
-  var subcatValue = [];
-        $.each($("input[type='checkbox']:checked"), function(){
-            subcatValue.push($(this).val());
-        });
+var storeMessage =  function() {
+    document.addEventListener('deviceready', function () {
+         cordova.plugins.notification.local.registerPermission(function (granted) {
+         });
+         var subcatValue = [];
+               $.each($("input[type='checkbox']:checked"), function(){
+                   subcatValue.push($(this).val());
+               });
 
-    var subcatFilter = [];
+           var subcatFilter = [];
 
-    $.getJSON("https://sdkim0739.pythonanywhere.com/api/message/?format=json", function(result) {
-  subcatValue.forEach(function(subcat) {
-          subcatFilter.push(result.objects.filter(function(msg) {
-               return msg.subcategory == subcat;
-            }));
-        });
-        message = subcatFilter[Math.floor(Math.random() * subcatFilter.length)][Math.floor(Math.random() * subcatFilter.length)].text;
+           $.getJSON("https://sdkim0739.pythonanywhere.com/api/message/?format=json", function(result) {
+         subcatValue.forEach(function(subcat) {
+                 subcatFilter.push(result.objects.filter(function(msg) {
+                      return msg.subcategory == subcat;
+                   }));
+               });
+               message = subcatFilter[Math.floor(Math.random() * subcatFilter.length)][Math.floor(Math.random() * subcatFilter.length)].text;
+           });
     });
 }
 
-function schedule()
+var schedule = function()
 {
+  document.addEventListener('deviceready', function () {
+       cordova.plugins.notification.local.registerPermission(function (granted) {
+       });
+       var user_freq = document.getElementById("frequency").options[document.getElementById("frequency")].value;
+       //var now = new Date();
+       var now = new Date().getTime(),
+       var _5_sec_from_now = new Date(now + 5*1000);
 
-  var user_freq = document.getElementById("frequency").options[document.getElementById("frequency")].value;
-  //var now = new Date();
-  var now = new Date().getTime(),
-  var _5_sec_from_now = new Date(now + 5*1000);
+       cordova.plugins.notification.local.schedule({
+           id: 1,
+           title: "EsteemBeam",
+           message: "${message}",
+           firstAt: _5_sec_from_now, // firstAt and at properties must be an IETF-compliant RFC 2822 timestamp
+           every: "${user_freq}", // this also could be minutes i.e. 25 (int)
+           sound: "file://sounds/reminder.mp3",
+           icon: "http://icons.com/?cal_id=1",
+           data: { meetingId:"123#fg8" }
+       });
 
-  cordova.plugins.notification.local.schedule({
-      id: 1,
-      title: "EsteemBeam",
-      message: "${message}",
-      firstAt: _5_sec_from_now, // firstAt and at properties must be an IETF-compliant RFC 2822 timestamp
-      every: "${user_freq}", // this also could be minutes i.e. 25 (int)
-      sound: "file://sounds/reminder.mp3",
-      icon: "http://icons.com/?cal_id=1",
-      data: { meetingId:"123#fg8" }
+       cordova.plugins.notification.local.on("click", function (notification) {
+           joinMeeting(notification.data.meetingId);
+       });
   });
-
-  cordova.plugins.notification.local.on("click", function (notification) {
-      joinMeeting(notification.data.meetingId);
-  });
-
 }
