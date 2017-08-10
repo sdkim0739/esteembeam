@@ -22,28 +22,31 @@
 
     </head>
 
-    <body>
-    <div class="Center" align="center">
-      <button class="btn-bot" onclick="cancelNotif()">Stop Sending Me Notifications</button>
-    </div>
+    <body>  
+       
+        <h1>Settings</h1>
 
+        <h2>If you don't want to receive notifications anymore, you can stop them using the button below.</h2>
 
-    <a href="index.html"><i class="fa fa-chevron-circle-left fa-5x" aria-hidden="true"></i></a>
+        <div class="Center" align="center">
+          <button class="btn-bot" onclick="cancelNotif()" type="button" class="button">Stop Sending Me Notifications</button>
+        </div>
+        
+        <script>
+              function cancelNotif() {
+                  cordova.plugins.notification.local.cancel(1, function () {
+                  // Notification was cancelled
+                  }, scope);
+              }
+        </script>
 
-    <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-          app.initialize();
-    </script>
+        <a href="index.html"><i class="fa fa-chevron-circle-left fa-5x" aria-hidden="true"></i></a>
 
-      <script>
-          function cancelNotif() {
-              cordova.plugins.notification.local.cancel(1, function () {
-              // Notification was cancelled
-              }, scope);
-          }
-      </script>
-
+        <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="js/index.js"></script>
+            <script type="text/javascript">
+              app.initialize();
+        </script>
 
     </body>
 </html>
