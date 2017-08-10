@@ -37,7 +37,7 @@
     </select>
     <br />
 
-    <a href="done.html" onclick="schedule();return false;"><i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i></a>
+    <a href="done.html" onclick="schedule()"><i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i></a>
     <a href="javascript:history.back();"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
 
     <script type="text/javascript" src="cordova.js"></script>
@@ -48,12 +48,12 @@
     <script>
     var schedule = function()
     {
-      document.addEventListener('deviceready', function () {
-           cordova.plugins.notification.local.registerPermission(function (granted) {
-           });
-           var user_freq = document.getElementById("frequency").options[document.getElementById("frequency")].value;
+    //  document.addEventListener('deviceready', function () {
+    //       cordova.plugins.notification.local.registerPermission(function (granted) {
+    //       });
+    //       var user_freq = document.getElementById("frequency").options[document.getElementById("frequency")].value;
            //var now = new Date();
-           var now = new Date().getTime(),
+           var now = new Date().getTime();
            var _5_sec_from_now = new Date(now + 5*1000);
 
            cordova.plugins.notification.local.schedule({
@@ -67,8 +67,8 @@
                data: { meetingId:"123#fg8" }
            });
 
-      });
-    }
+    //  });
+  //  }
     </script>
 </body>
 
