@@ -1,0 +1,58 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-color:white;
+}
+
+
+.button {
+    font-family: "Catamaran";
+    background-color: RGB(212,253,255); /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;
+        margin:-90px 0px 0px -198px;
+    }
+
+}
+
+h1 {
+    font-family:"Raleway";
+    font-size:36px;
+    font-weight:normal;
+    margin-top:10%;
+    margin-bottom:15%;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+    color:#737373;
+  }
+
+p {
+    color:black;
+    text-align: center;
+    font-family:"Catamaran";
+    font-size: 18px;
+    margin-left:auto;
+    margin-right:auto;
+}
