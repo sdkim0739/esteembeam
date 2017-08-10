@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.esteembeamapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>EsteemBeamApp</name>
+<widget id="com.phonegap.esteembeam" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>EsteemBeam</name>
     <description>
         An app designed to help a person's self-esteem.
     </description>
@@ -8,6 +8,7 @@
         Shagun Six
     </author>
     <content src="index.html" />
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
