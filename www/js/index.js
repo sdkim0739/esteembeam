@@ -71,13 +71,15 @@ function schedule()
 {
 
   var user_freq = document.getElementById("frequency").options[document.getElementById("frequency")].value;
-  var now = new Date();
+  //var now = new Date();
+  var now = new Date().getTime(),
+  var _5_sec_from_now = new Date(now + 5*1000);
 
   cordova.plugins.notification.local.schedule({
       id: 1,
       title: "EsteemBeam",
       message: "${message}",
-      firstAt: now, // firstAt and at properties must be an IETF-compliant RFC 2822 timestamp
+      firstAt: _5_sec_from_now, // firstAt and at properties must be an IETF-compliant RFC 2822 timestamp
       every: "${user_freq}", // this also could be minutes i.e. 25 (int)
       sound: "file://sounds/reminder.mp3",
       icon: "http://icons.com/?cal_id=1",
