@@ -1,18 +1,27 @@
 h1 {
-  color: black;
-  font-family: "Raleway";
-  text-align: center;
-  font-size: 36px;
-}
+    font-family:"Raleway";
+    font-size:36px;
+    font-weight:normal;
+    margin-top:50px;
+    margin-bottom:15%;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+  }
 
 h2 {
-  color: black;
-  font-family: "Raleway";
-  text-align: center;
-  font-size: 22px;
+  font-family:"Raleway";
+  font-size:22px;
+  font-weight:normal;
+  margin-top:10%;
+  margin-bottom:15%;
+  overflow:visible;
+  padding:0px;
+  text-align:center;
+  color:#737373;
 }
 
-button {
+.button {
   display: inline-block;
   background-color: rgb(212, 253, 255);
   border: none;
@@ -20,6 +29,7 @@ button {
   font-size: 18px;
   padding: 20px;
   width: 200px;
+  font-family:"Catamaran";
 }
 
 Center {
