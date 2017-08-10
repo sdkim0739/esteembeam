@@ -38,6 +38,31 @@
     <a href="frequency-pg.html" onclick="storeMessage();return false;"><i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i></a>
     <a href="categories.html"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
 
+    <script type="text/javascript">
+    var message;
+
+    var storeMessage =  function() {
+        document.addEventListener('deviceready', function () {
+             cordova.plugins.notification.local.registerPermission(function (granted) {
+             });
+             var subcatValue = [];
+                   $.each($("input[type='checkbox']:checked"), function(){
+                       subcatValue.push($(this).val());
+                   });
+
+               var subcatFilter = [];
+
+               $.getJSON("https://sdkim0739.pythonanywhere.com/api/message/?format=json", function(result) {
+             subcatValue.forEach(function(subcat) {
+                     subcatFilter.push(result.objects.filter(function(msg) {
+                          return msg.subcategory == subcat;
+                       }));
+                   });
+                   message = subcatFilter[Math.floor(Math.random() * subcatFilter.length)][Math.floor(Math.random() * subcatFilter.length)].text;
+               });
+        });
+    }
+    </script>
 </body>
 
 </html>
